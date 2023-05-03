@@ -1,15 +1,13 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
 
--- vim.cmd([[colorscheme default]])
+vim.cmd([[colorscheme murphy]])
 
---设置背景透明
--- vim.g.solarized_termtrans = 0.3
+-- 设置透明背景颜色, 透明时不设置会报错
+require("notify").setup({
+  background_colour = "#E45305",
+})
 
--- require("tokyonight").setup {
---     transparent = true,
---     styles = {
---        sidebars = "transparent",
---        floats = "transparent",
---     }
--- }
+-- set transparent background
+vim.cmd([[hi Normal guibg=NONE ctermbg=NONE]])
+vim.cmd([[hi EndOfBuffer guibg=NONE ctermbg=NONE]])
