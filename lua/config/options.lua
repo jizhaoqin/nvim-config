@@ -10,7 +10,7 @@ vim.opt.winbar = "%=%m %f"
 vim.wo.colorcolumn = "100"
 
 -- 行结尾可以跳到下一行
-vim.o.whichwrap = "h,l"
+vim.o.whichwrap = "b,s,<,>,[,],h,l"
 
 -- 两个空格等于一个tab
 vim.o.tabstop = 2

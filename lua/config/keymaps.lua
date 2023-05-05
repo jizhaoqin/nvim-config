@@ -19,8 +19,8 @@ map("t", "jk", "<C-\\><C-n>", opt)
 map("n", "<leader>sx", require("telescope.builtin").resume, { noremap = true, silent = true, desc = "Resume" })
 map("n", "<leader>wa", ":wall<CR>", { noremap = true, silent = true, desc = "save all modified files-jizhao" })
 -- 浏览代码
-map("n", "<C-u>", "15k", opt)
-map("n", "<C-d>", "15j", opt)
+map("n", "<A-u>", "15k", opt)
+map("n", "<A-d>", "15j", opt)
 -- 使用 alt + hjkl 在buffer之间跳转
 map("n", "<A-l>", ":bnext<CR>", opt)
 map("n", "<A-h>", ":bprevious<CR>", opt)
