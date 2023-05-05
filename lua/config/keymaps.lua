@@ -5,13 +5,17 @@
 local map = vim.keymap.set
 local opt = { noremap = true, silent = true }
 
--- 插入模式
+-- -------- 插入模式 --------
 map("i", "jk", "<ESC>", { noremap = true, silent = true })
 
--- 终端模式
-map("t", "<ESC>", "<C-\\><C-n>", opt) -- back to normal mode in terminal mode
+-- -------- 视觉模式 --------
+map("v", "jk", "<ESC>", opt)
 
--- 正常模式
+-- -------- 终端模式 --------
+map("t", "<ESC>", "<C-\\><C-n>", opt) -- back to normal mode in terminal mode
+map("t", "jk", "<C-\\><C-n>", opt)
+
+-- -------- 正常模式 --------
 map("n", "<leader>sx", require("telescope.builtin").resume, { noremap = true, silent = true, desc = "Resume" })
 map("n", "<leader>wa", ":wall<CR>", { noremap = true, silent = true, desc = "save all modified files-jizhao" })
 -- 浏览代码

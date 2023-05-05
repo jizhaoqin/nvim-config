@@ -3,8 +3,8 @@
 -- Add any additional options here
 
 -- show the up right path bar
--- vim.opt.winbar = "%=%m %f"
-vim.opt.winbar = " "
+vim.opt.winbar = "%=%m %f"
+-- vim.opt.winbar = " "
 
 -- 右侧参考线，超过表示代码太长了，考虑换行
 vim.wo.colorcolumn = "100"
