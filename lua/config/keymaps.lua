@@ -9,7 +9,7 @@ local opt = { noremap = true, silent = true }
 map("i", "jk", "<ESC>", { noremap = true, silent = true })
 
 -- -------- 视觉模式 --------
-map("v", "jk", "<ESC>", opt)
+-- map("v", "jk", "<ESC>", opt)  -- this setting would reduce moving speed, so disabled
 
 -- -------- 终端模式 --------
 map("t", "<ESC>", "<C-\\><C-n>", opt) -- back to normal mode in terminal mode
