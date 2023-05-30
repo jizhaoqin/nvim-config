@@ -7,7 +7,7 @@ vim.opt.winbar = "%=%m %f"
 -- vim.opt.winbar = " "
 
 -- 右侧参考线，超过表示代码太长了，考虑换行
-vim.wo.colorcolumn = "100"
+-- vim.wo.colorcolumn = "100"
 
 -- 行结尾可以跳到下一行
 vim.o.whichwrap = "b,s,<,>,[,],h,l"
